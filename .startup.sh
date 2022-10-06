@@ -14,6 +14,7 @@ echo "E. open tmux"
 echo "F. coder aesthetic"
 echo "G. random quote"
 echo "H. Open neovimRC"
+echo "I. Calculator"
 
 while true; do
 
@@ -28,6 +29,7 @@ while true; do
 		[fF]) ./.acsii.sh; neofetch;;     
 		[gG]) echo "$quote";;
 		[hH]) nvim ~/.config/nvim/init.lua;;
+		[iI]) cd ~/'C files'/tasks/calc; ./a.out;;
 		
 	esac
 done
