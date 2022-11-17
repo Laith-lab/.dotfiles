@@ -65,6 +65,21 @@ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- Print out files
+keymap("n", "<C-c>", ":!gcc % && ./a.out<CR>", opts) -- Run a C file
+keymap('n', '<leader>b', ':!chmod +x ./% && ./% <CR>', opts) -- Run a Bash files
+keymap('n', '<leader>p', ' :w <CR> :!python3 % <CR>', opts) -- Run a python file
+keymap('n', '<leader>j', ':w <CR> :!javac % && java %:r <CR>', opts) -- Run a java file
+
+--Plugins--
 
 --BarBar
 keymap('n', '<leader>f', ':BufferPrevious<CR>', opts)
+
+--Telescope
+keymap('n', '<leader>t', ':Telescope find_files<CR>', {noremap = true}) 
+
+
+
+
+

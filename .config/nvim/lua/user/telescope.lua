@@ -1,5 +1,4 @@
 local keymap = vim.api.nvim_set_keymap
-keymap('n', '<leader>t', ':Telescope find_files<CR>', {noremap = true}) --Telescope
 
 require('telescope').setup{
   defaults = {
