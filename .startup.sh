@@ -13,7 +13,7 @@ echo "D. Temperature Converter"
 echo "E. open tmux"
 echo "F. coder aesthetic"
 echo "G. random quote"
-echo "H. Open neovimRC"
+echo "H. Open NeoVim"
 echo "I. Calculator"
 
 while true; do
@@ -28,7 +28,7 @@ while true; do
 		[eE]) tmux;;
 		[fF]) ./.acsii.sh; neofetch;;     
 		[gG]) echo "$quote";;
-		[hH]) nvim ~/.config/nvim/init.lua;;
+		[hH]) nvim;;
 		[iI]) cd ~/'C files'/tasks/calc; ./a.out;;
 		
 	esac

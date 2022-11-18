@@ -1,9 +1,11 @@
-# Dotfiles
+# Dotfiles -- My configs.
 
-Most of my configs.
 
-- Neovim config
+
+- NeoVimRC (new and old)
+  - LSP, cmp, colorschemes, keymaps, support for C and ASM
+- Tmux
 - BashRC
-- Shell files 
-- Neofetch config
-- Etc
+- .configs
+- Shell (and some other things)
+
