@@ -1,6 +1,6 @@
 #!/bin/bash
 
-weather=$(curl wttr.in/city=doha)
+weather=$(curl wttr.in/?format=3?city=doha)
 quote=$(motivate)
 
 
@@ -24,9 +24,9 @@ while true; do
 		[aA]) exit;;
 		[bB]) nvim ~/.bashrc;;
 		[cC]) echo "$weather";;
-		[dD]) cd ~/'C files'/comp; ./a.out;;
+		[dD]) cd ~/.dotfiles/'.C files'/comp; ./a.out;;
 		[eE]) tmux;;
-		[fF]) ./.acsii.sh; neofetch;;     
+		[fF]) cd .dotfiles;./.acsii.sh; neofetch;;     
 		[gG]) echo "$quote";;
 		[hH]) nvim;;
 		[iI]) cd ~/'C files'/tasks/calc; ./a.out;;

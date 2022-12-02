@@ -9,3 +9,5 @@ require "user.cmp"
 vim.cmd "colorscheme onedark" 
 require("startup").setup({theme = "dashboard"})
 require("lualine").setup()
+
+
